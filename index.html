@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORTNEY ZIEKY - Personal Fitness Coach</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body class="font-display text-gray-900 antialiased tracking-wide" style="background-color: #FCF8F4;">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="#" class="text-xl font-semibold text-gray-900">CORTNEY ZIEKY</a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-sm font-medium text-black hover:text-gray-900 transition-colors">Features</a>
+                    <a href="#programs" class="text-sm font-medium text-black hover:text-gray-900 transition-colors">Programs</a>
+                    <a href="#testimonials" class="text-sm font-medium text-black hover:text-gray-900 transition-colors">Stories</a>
+                    <a href="#gallery" class="text-sm font-medium text-black hover:text-gray-900 transition-colors">Gallery</a>
+                    <a href="#pricing" class="text-sm font-medium text-black hover:text-gray-900 transition-colors">Pricing</a>
+                    <a href="#booking" class="text-sm font-medium text-black hover:text-gray-900 transition-colors">Book</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#cta" class="hidden sm:inline-flex px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-full hover:bg-primary-dark transition-all hover:scale-105">
+                        Get Started
+                    </a>
+                    <button class="md:hidden p-2 text-black" id="mobile-menu-btn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-gray-100" id="mobile-menu">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#features" class="block text-sm font-medium text-black py-2">Features</a>
+                <a href="#programs" class="block text-sm font-medium text-black py-2">Programs</a>
+                <a href="#testimonials" class="block text-sm font-medium text-black py-2">Stories</a>
+                <a href="#gallery" class="block text-sm font-medium text-black py-2">Gallery</a>
+                <a href="#pricing" class="block text-sm font-medium text-black py-2">Pricing</a>
+                <a href="#booking" class="block text-sm font-medium text-black py-2">Book</a>
+                <a href="#cta" class="block w-full text-center px-5 py-3 bg-primary text-white text-sm font-medium rounded-full mt-4">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="reveal">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-black mb-6">
+                        <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+                        Personal Training
+                    </span>
+                    <h1 class="text-[55px] font-semibold text-gray-900 leading-tight mb-6">
+                        Transform your body,<br>
+                        <span class="text-primary">transform your life.</span>
+                    </h1>
+                    <p class="text-lg text-black font-sans leading-relaxed mb-8 max-w-lg">
+                        One-on-one personal training designed for your goals, schedule, and lifestyle. Get stronger, more confident, and achieve lasting results.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="#booking" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-base font-medium rounded-full hover:bg-primary-dark transition-all hover:scale-105 hover:shadow-lg">
+                            Book a Session
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                        <a href="#features" class="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 text-base font-medium rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all">
+                            See How It Works
+                        </a>
+                    </div>
+                    <!-- Stats -->
+                    <div class="flex items-center gap-8">
+                        <div>
+                            <div class="text-2xl font-semibold text-gray-900">50K+</div>
+                            <div class="text-sm text-black">Active Members</div>
+                        </div>
+                        <div class="w-px h-10 bg-gray-200"></div>
+                        <div>
+                            <div class="text-2xl font-semibold text-gray-900">2M+</div>
+                            <div class="text-sm text-black">Workouts Completed</div>
+                        </div>
+                        <div class="w-px h-10 bg-gray-200"></div>
+                        <div>
+                            <div class="text-2xl font-semibold text-gray-900">4.9</div>
+                            <div class="text-sm text-black">App Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative reveal stagger-2">
+                    <div class="relative aspect-[4/5] rounded-3xl overflow-hidden bg-gray-100">
+                        <img src="images/image1.jpg" 
+                             alt="Fitness training" 
+                             class="w-full h-full object-cover">
+                        <!-- Floating Card -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-gray-900">Workout Complete!</div>
+                                    <div class="text-xs text-black">Burned 320 calories</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary/5 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Journey Section -->
+    <section id="journey" class="py-24 lg:py-32" style="background-color: #FCF8F4;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-black mb-6 shadow-sm">
+                    My Story
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                    From struggle to<br><span class="text-primary">strength</span>
+                </h2>
+                <p class="text-lg text-black font-sans leading-relaxed">
+                    My fitness journey wasn't always easy. Here's how I transformed my life and why I'm passionate about helping you do the same.
+                </p>
+            </div>
+
+            <!-- Journey Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2"></div>
+
+                <!-- Journey Step 1 -->
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 lg:mb-0 reveal">
+                    <div class="lg:pr-12 order-2 lg:order-1">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm">
+                            <span class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary font-bold text-lg mb-4">01</span>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">The Beginning</h3>
+                            <p class="text-black font-sans leading-relaxed">
+                                Five years ago, I was struggling with low energy and self-confidence. I tried countless diets and workout programs that never stuck. I felt lost and frustrated.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:pl-12 order-1 lg:order-2">
+                        <div class="relative rounded-3xl overflow-hidden aspect-[4/4] shadow-lg">
+                            <img src="images/image3.jpg" 
+                                 alt="Beginning of journey" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Step 2 -->
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 lg:mb-0 reveal">
+                    <div class="lg:pr-12">
+                        <div class="relative rounded-3xl overflow-hidden aspect-[4/4] shadow-lg">
+                            <video autoplay muted loop playsinline class="w-full h-full object-cover rounded-2xl">
+                                <source src="images/v9.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="lg:pl-12">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm">
+                            <span class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary font-bold text-lg mb-4">02</span>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Finding My Path</h3>
+                            <p class="text-black font-sans leading-relaxed">
+                                Everything changed when I discovered that fitness isn't about punishment - it's about self-care. I got my personal training certification and learned how to build sustainable, enjoyable routines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Step 3 -->
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center reveal">
+                    <div class="lg:pr-12 order-2 lg:order-1">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm">
+                            <span class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full text-primary font-bold text-lg mb-4">03</span>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">My Mission Today</h3>
+                            <p class="text-black font-sans leading-relaxed mb-4">
+                                Now, I help people just like you break through their barriers. I've trained over 500 clients, and my mission is simple: make fitness accessible, enjoyable, and life-changing.
+                            </p>
+                            <div class="flex items-center gap-4">
+                                <div class="text-center">
+                                    <div class="text-2xl font-semibold text-primary">500+</div>
+                                    <div class="text-sm text-black">Clients Trained</div>
+                                </div>
+                                <div class="w-px h-10 bg-gray-200"></div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-semibold text-primary">8+</div>
+                                    <div class="text-sm text-black">Years Experience</div>
+                                </div>
+                                <div class="w-px h-10 bg-gray-200"></div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-semibold text-primary">10K+</div>
+                                    <div class="text-sm text-black">Lives Impacted</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:pl-12 order-1 lg:order-2">
+                        <div class="relative rounded-3xl overflow-hidden aspect-[4/4] shadow-lg">
+                            <img src="images/cortney-hero.jpg" 
+                                 alt="Cortney today" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-black mb-6">
+                    What I Offer
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                    Move better. Feel stronger.<br>Every day.
+                </h2>
+                <p class="text-lg text-black font-sans">
+                    Personalized workouts, real progress, all from home. Your personal coach adapts every session to you.
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-gray-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 reveal stagger-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Personalized Workouts</h3>
+                    <p class="text-sm text-black font-sans leading-relaxed">Custom plans designed for your fitness level, goals, and available equipment.</p>
+                </div>
+                <div class="group bg-gray-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 reveal stagger-2">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Smart Progress Tracking</h3>
+                    <p class="text-sm text-black font-sans leading-relaxed">Visualize your journey with beautiful charts that celebrate every milestone.</p>
+                </div>
+                <div class="group bg-gray-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 reveal stagger-3">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Expert Coaching</h3>
+                    <p class="text-sm text-black font-sans leading-relaxed">Get real-time feedback and encouragement from your personal fitness coach.</p>
+                </div>
+                <div class="group bg-gray-50 rounded-3xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 reveal stagger-4">
+                    <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-3">Mood & Habit Tracking</h3>
+                    <p class="text-sm text-black font-sans leading-relaxed">Understand how you feel to train smarter and build lasting healthy habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Content Section 1 -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="order-2 lg:order-1 reveal">
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80" 
+                             alt="Workout tracking" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 reveal stagger-1">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-black mb-6">
+                        Progress Tracking
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
+                        Track your progress<br>with ease
+                    </h2>
+                    <p class="text-lg text-black font-sans leading-relaxed mb-8">
+                        Watch your progress turn into results. I keep your journey simple and encouraging by showing how far you've come, not just where you're going.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-black">Visual workout history and streaks</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-black">Body measurement tracking</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </div>
+                            <span class="text-black">Celebrate every milestone</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Content Section 2 -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="reveal">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-black mb-6">
+                        Expert Coaching
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
+                        Feel stronger<br>every day
+                    </h2>
+                    <p class="text-lg text-black font-sans leading-relaxed mb-8">
+                        I analyze your real progress, mood, energy, and habits to adjust your workouts session by session. It's not a static plan—it's living, supportive guidance tailored just for you.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-2xl p-6">
+                            <div class="text-3xl font-semibold text-primary mb-2">85%</div>
+                            <div class="text-sm text-black">Users report improved energy levels within 2 weeks</div>
+                        </div>
+                        <div class="bg-gray-50 rounded-2xl p-6">
+                            <div class="text-3xl font-semibold text-primary mb-2">92%</div>
+                            <div class="text-sm text-black">Stick with their goals longer than traditional apps</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal stagger-1">
+                    <div class="relative rounded-3xl overflow-hidden aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80" 
+                             alt="Yoga and wellness" 
+                             class="w-full h-full object-cover">
+                        <!-- Floating Element -->
+                        <div class="absolute top-6 right-6 bg-white rounded-2xl p-4 shadow-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium text-gray-900">Great mood today!</div>
+                                    <div class="text-xs text-black">Ready for a challenge</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Types / Programs -->
+    <section id="programs" class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm font-medium text-gray-300 mb-6">
+                    Programs
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6">
+                    Hundreds of workouts<br>for every level
+                </h2>
+                <p class="text-lg text-gray-300 font-sans">
+                    Discover a fitness experience that adapts to you. Each workout is designed to fit your rhythm, goals, and mood.
+                </p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 cursor-pointer reveal stagger-1">
+                    <div class="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">HIIT</h3>
+                    <p class="text-sm text-gray-300 font-sans leading-relaxed mb-4">Short, dynamic intervals to lift your heart rate and boost energy.</p>
+                    <div class="flex items-center gap-2 text-sm text-primary">
+                        <span>20-30 min</span>
+                        <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                        <span>High intensity</span>
+                    </div>
+                </div>
+                <div class="group relative bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 cursor-pointer reveal stagger-2">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Strength</h3>
+                    <p class="text-sm text-gray-300 font-sans leading-relaxed mb-4">Build muscle and power with progressive resistance training.</p>
+                    <div class="flex items-center gap-2 text-sm text-blue-400">
+                        <span>30-45 min</span>
+                        <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                        <span>Moderate-High</span>
+                    </div>
+                </div>
+                <div class="group relative bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 cursor-pointer reveal stagger-3">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Yoga & Stretch</h3>
+                    <p class="text-sm text-gray-300 font-sans leading-relaxed mb-4">Improve flexibility, posture, and find your inner calm.</p>
+                    <div class="flex items-center gap-2 text-sm text-purple-400">
+                        <span>15-45 min</span>
+                        <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                        <span>Low intensity</span>
+                    </div>
+                </div>
+                <div class="group relative bg-white/5 rounded-3xl p-8 hover:bg-white/10 transition-all duration-300 cursor-pointer reveal stagger-4">
+                    <div class="w-14 h-14 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Toning</h3>
+                    <p class="text-sm text-gray-300 font-sans leading-relaxed mb-4">Low-impact training that sculpts your body without strain.</p>
+                    <div class="flex items-center gap-2 text-sm text-orange-400">
+                        <span>20-30 min</span>
+                        <span class="w-1 h-1 bg-gray-500 rounded-full"></span>
+                        <span>Low-Moderate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="reveal">
+                    <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-black mb-6">
+                        Why Choose Me
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">
+                        What you get<br>working with me
+                    </h2>
+                    <p class="text-lg text-black font-sans leading-relaxed mb-8">
+                        Feel stronger, more confident, and more connected to your body, one small step at a time.
+                    </p>
+                    <a href="#booking" class="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all">
+                        Book your session
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="flex gap-4 reveal stagger-1">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Beginner Friendly</h3>
+                            <p class="text-sm text-black font-sans">Start at any level with guided workouts</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 reveal stagger-2">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Flexible Workouts</h3>
+                            <p class="text-sm text-black font-sans">15-45 min sessions that fit your schedule</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 reveal stagger-3">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Smart Tracking</h3>
+                            <p class="text-sm text-black font-sans">Plans adapt to your progress automatically</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 reveal stagger-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900 mb-1">Community Support</h3>
+                            <p class="text-sm text-black font-sans">Join 50,000+ members on the same journey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-black mb-6 shadow-sm">
+                    Testimonials
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                    Here's what our<br>community is saying
+                </h2>
+            </div>
+            <!-- Swiper Testimonials Slider -->
+            <div class="swiper testimonial-swiper reveal">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm h-full">
+                            <div class="flex gap-1 mb-6">
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-black mb-6 leading-relaxed font-sans">"I've worked with many trainers but Cortney is the only one who truly understands my body and goals. The personalized approach changed everything."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" 
+                                     alt="Jessica K." 
+                                     class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div class="font-medium text-gray-900">Jessica K.</div>
+                                    <div class="text-sm text-black font-sans">Member for 8 months</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm h-full">
+                            <div class="flex gap-1 mb-6">
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-black mb-6 leading-relaxed font-sans">"The progress tracking is beautiful and motivating. I love seeing my consistency streak grow. It's changed my relationship with fitness."</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" 
+                                     alt="David L." 
+                                     class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div class="font-medium text-gray-900">David L.</div>
+                                    <div class="text-sm text-black font-sans">Member for 1 year</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm h-full">
+                            <div class="flex gap-1 mb-6">
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-black mb-6 leading-relaxed font-sans">"As a busy mom, I needed flexibility. Cortney designed workouts that fit my schedule perfectly. The results speak for themselves!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" 
+                                     alt="Amanda R." 
+                                     class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div class="font-medium text-gray-900">Amanda R.</div>
+                                    <div class="text-sm text-black font-sans">Member for 6 months</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-3xl p-8 shadow-sm h-full">
+                            <div class="flex gap-1 mb-6">
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 text-primary fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                            <p class="text-black mb-6 leading-relaxed font-sans">"As a busy mom, I needed flexibility. Cortney designed workouts that fit my schedule perfectly. The results speak for themselves!"</p>
+                            <div class="flex items-center gap-4">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" 
+                                     alt="Amanda R." 
+                                     class="w-12 h-12 rounded-full object-cover">
+                                <div>
+                                    <div class="font-medium text-gray-900">Amanda R.</div>
+                                    <div class="text-sm text-black font-sans">Member for 6 months</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <div class="swiper-button-prev testimonial-prev"></div>
+                <div class="swiper-button-next testimonial-next"></div>
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination testimonial-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="py-24 lg:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-sm font-medium text-black mb-6 shadow-sm">
+                    Gallery
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                    Transformations &<br>Moments
+                </h2>
+                <p class="text-lg text-black font-sans">
+                    Real results from real people. Every photo tells a story of dedication and progress.
+                </p>
+            </div>
+            <div class="masonry-grid reveal">
+                <div class="masonry-item stagger-1">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Workout" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="masonry-item stagger-2">
+                    <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+                        <source src="images/v1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="masonry-item stagger-3">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="Gym" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="masonry-item stagger-4">
+                    <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+                        <source src="images/v2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="masonry-item stagger-1">
+                    <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&q=80" alt="Training" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="masonry-item stagger-2">
+                    <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+                        <source src="images/v10.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="masonry-item stagger-3">
+                    <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+                        <source src="images/v3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="masonry-item stagger-4">
+                    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=600&q=80" alt="Results" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="masonry-item stagger-1">
+                    <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+                        <source src="images/v4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="masonry-item stagger-2">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80" alt="Yoga" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="masonry-item stagger-3">
+                    <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=600&q=80" alt="Stretching" class="w-full h-auto rounded-2xl">
+                </div>
+                <div class="masonry-item stagger-4">
+                    <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+                        <source src="images/v5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-24 lg:py-32">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-black mb-6">
+                    Book a Session
+                </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                    Start your journey<br>with Cortney
+                </h2>
+                <p class="text-lg text-black font-sans max-w-xl mx-auto">
+                    Schedule your free consultation. Let's discuss your goals and create a plan that works for you.
+                </p>
+            </div>
+            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm reveal stagger-1">
+                <!-- Progress Steps -->
+                <div class="flex items-center justify-center gap-2 mb-10">
+                    <div class="step-indicator w-3 h-3 rounded-full bg-primary transition-all" data-step="1"></div>
+                    <div class="step-indicator w-3 h-3 rounded-full bg-gray-200 transition-all" data-step="2"></div>
+                    <div class="step-indicator w-3 h-3 rounded-full bg-gray-200 transition-all" data-step="3"></div>
+                    <div class="step-indicator w-3 h-3 rounded-full bg-gray-200 transition-all" data-step="4"></div>
+                    <div class="step-indicator w-3 h-3 rounded-full bg-gray-200 transition-all" data-step="5"></div>
+                </div>
+
+                <form id="booking-form" class="space-y-6">
+                    <!-- Step 1: Name -->
+                    <div class="form-step" data-step="1">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">What's your name?</h3>
+                            <p class="text-black font-sans">Let's start with the basics</p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">First Name <span class="text-red-500">*</span></label>
+                                <input type="text" id="firstName" placeholder="Your first name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 font-sans">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Last Name <span class="text-red-500">*</span></label>
+                                <input type="text" id="lastName" placeholder="Your last name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 font-sans">
+                            </div>
+                        </div>
+                        <p class="text-center text-sm text-black font-sans mt-4">Press <kbd class="px-2 py-1 bg-gray-100 rounded text-xs">Enter</kbd> to continue</p>
+                    </div>
+
+                    <!-- Step 2: Contact -->
+                    <div class="form-step hidden" data-step="2">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">How can I reach you?</h3>
+                            <p class="text-black font-sans">Your contact information</p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Email <span class="text-red-500">*</span></label>
+                                <input type="email" id="email" placeholder="you@example.com" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 font-sans">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Phone <span class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 font-sans">
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6">
+                            <button type="button" class="prev-btn px-6 py-3 text-gray-600 hover:text-gray-900 transition-colors">← Back</button>
+                            <button type="button" class="next-btn px-8 py-3 bg-primary text-white rounded-full hover:bg-primary-dark transition-all hover:scale-105">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Session Type -->
+                    <div class="form-step hidden" data-step="3">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">What type of session?</h3>
+                            <p class="text-black font-sans">Choose what works best for you</p>
+                        </div>
+                        <div class="grid sm:grid-cols-3 gap-4">
+                            <label class="session-option relative cursor-pointer">
+                                <input type="radio" name="session" value="consultation" class="peer sr-only" checked>
+                                <div class="p-4 rounded-xl border border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 hover:bg-gray-50 transition-all text-center">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="font-medium text-gray-900 mb-1">Free Consultation</div>
+                                    <div class="text-xs text-black">30 min discovery call</div>
+                                </div>
+                            </label>
+                            <label class="session-option relative cursor-pointer">
+                                <input type="radio" name="session" value="personal" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 hover:bg-gray-50 transition-all text-center">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="font-medium text-gray-900 mb-1">Personal Training</div>
+                                    <div class="text-xs text-black">60 min 1-on-1 session</div>
+                                </div>
+                            </label>
+                            <label class="session-option relative cursor-pointer">
+                                <input type="radio" name="session" value="group" class="peer sr-only">
+                                <div class="p-4 rounded-xl border border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 hover:bg-gray-50 transition-all text-center">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="font-medium text-gray-900 mb-1">Group Session</div>
+                                    <div class="text-xs text-black">45 min small group</div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex justify-between mt-6">
+                            <button type="button" class="prev-btn px-6 py-3 text-gray-600 hover:text-gray-900 transition-colors">← Back</button>
+                            <button type="button" class="next-btn px-8 py-3 bg-primary text-white rounded-full hover:bg-primary-dark transition-all hover:scale-105">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Date & Time -->
+                    <div class="form-step hidden" data-step="4">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">When works for you?</h3>
+                            <p class="text-black font-sans">Pick your preferred slot</p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Preferred Date <span class="text-red-500">*</span></label>
+                                <input type="date" id="date" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 font-sans">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-900 mb-2">Preferred Time <span class="text-red-500">*</span></label>
+                                <select id="time" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 bg-white font-sans">
+                                    <option value="">Select a time</option>
+                                    <option value="morning">Morning (6AM - 10AM)</option>
+                                    <option value="midday">Midday (10AM - 2PM)</option>
+                                    <option value="afternoon">Afternoon (2PM - 6PM)</option>
+                                    <option value="evening">Evening (6PM - 9PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-6">
+                            <button type="button" class="prev-btn px-6 py-3 text-gray-600 hover:text-gray-900 transition-colors">← Back</button>
+                            <button type="button" class="next-btn px-8 py-3 bg-primary text-white rounded-full hover:bg-primary-dark transition-all hover:scale-105">Continue →</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Goals & Submit -->
+                    <div class="form-step hidden" data-step="5">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Almost done!</h3>
+                            <p class="text-black font-sans">Share your goals (optional)</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-900 mb-2">Your Goals</label>
+                            <textarea id="goals" rows="4" placeholder="Tell me about your fitness goals and any specific requirements..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-gray-900 resize-none font-sans"></textarea>
+                        </div>
+                        <div class="flex justify-between mt-6">
+                            <button type="button" class="prev-btn px-6 py-3 text-gray-600 hover:text-gray-900 transition-colors">← Back</button>
+                            <button type="submit" class="px-10 py-4 bg-primary text-white text-base font-medium rounded-full hover:bg-primary-dark transition-all hover:scale-105 hover:shadow-xl flex items-center gap-2">
+                                Confirm Booking
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Thank You Message -->
+                <div id="thank-you" class="hidden text-center py-12">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-4">Thank you, <span id="user-name">there</span>!</h3>
+                    <p class="text-lg text-black font-sans mb-6 max-w-md mx-auto">
+                        Your booking request has been received. I'll be in touch within 24 hours to confirm your session details.
+                    </p>
+                    <button type="button" onclick="resetForm()" class="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary-dark transition-all hover:scale-105">
+                        Book Another Session
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="cta" class="py-24 lg:py-32">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-black mb-8">
+                Ready to transform?
+            </span>
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6">
+                Your strength<br>starts today
+            </h2>
+            <p class="text-xl text-black font-sans mb-10 max-w-2xl mx-auto">
+                Join thousands of people who have already started their journey to a stronger, healthier life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#booking" class="inline-flex items-center justify-center px-10 py-5 bg-primary text-white text-lg font-medium rounded-full hover:bg-primary-dark transition-all hover:scale-105 hover:shadow-xl">
+                    Book a Session
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+                <a href="#pricing" class="inline-flex items-center justify-center px-10 py-5 bg-white text-gray-900 text-lg font-medium rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all">
+                    View Pricing
+                </a>
+            </div>
+            <p class="mt-6 text-sm text-black">No credit card required. 14-day free trial.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-1">
+                    <a href="#" class="text-xl font-semibold text-gray-900 mb-6 inline-block">CORTNEY ZIEKY</a>
+                    <p class="text-sm text-black mb-6">
+                        Personal fitness coaching for those who want real results. Feel strong, supported, and confident every step of the way.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+                            <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Product</h4>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li><a href="#features" class="hover:text-gray-900 transition-colors">Features</a></li>
+                        <li><a href="#programs" class="hover:text-gray-900 transition-colors">Programs</a></li>
+                        <li><a href="#pricing" class="hover:text-gray-900 transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Download App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Company</h4>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Support</h4>
+                    <ul class="space-y-3 text-sm text-black">
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-100 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-black font-sans">© 2026 CORTNEY ZIEKY. All rights reserved.</p>
+                <p class="text-sm text-black font-sans">Made with care for your fitness journey.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- WhatsApp Popup -->
+    <div id="whatsapp-popup" class="fixed bottom-24 right-6 z-50 hidden">
+        <div class="bg-white rounded-2xl shadow-2xl p-4 max-w-xs mb-4 animate-slide-up border border-gray-100">
+            <div class="flex items-start gap-3">
+                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-sm font-medium text-gray-900 mb-1">Hi there! 👋</p>
+                    <p class="text-sm text-black font-sans">Have questions about training? I'm here to help!</p>
+                </div>
+            </div>
+            <button onclick="closeWhatsAppPopup()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890?text=Hi%20Cortney!%20I'm%20interested%20in%20personal%20training." 
+       target="_blank"
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+       onclick="closeWhatsAppPopup()">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="absolute right-16 bg-gray-900 text-white text-sm px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Chat on WhatsApp</span>
+    </a>
+
+    <script>
+        // Show WhatsApp popup after 5 seconds
+        setTimeout(function() {
+            document.getElementById('whatsapp-popup').classList.remove('hidden');
+        }, 5000);
+
+        function closeWhatsAppPopup() {
+            document.getElementById('whatsapp-popup').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

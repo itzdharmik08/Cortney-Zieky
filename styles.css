@@ -1,0 +1,151 @@
+/* Custom CSS for FitFlow */
+
+/* Clash Grotesk Offline Font */
+@font-face {
+  font-family: 'ClashGrotesk';
+  src: url('ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+       url('ClashGrotesk_Complete/Fonts/WEB/fonts/ClashGrotesk-Variable.woff') format('woff');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Scroll reveal animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for sequential animations */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Display font optimizations */
+body {
+    font-feature-settings: "liga" 1, "calt" 1;
+}
+
+/* 1px letter spacing for headings */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 1px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A3A3A3;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #525252;
+}
+
+/* Masonry Grid Gallery */
+.masonry-grid {
+    column-count: 1;
+    column-gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1280px) {
+    .masonry-grid {
+        column-count: 4;
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.masonry-item img,
+.masonry-item video {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, filter 0.3s ease;
+    filter: brightness(0.95);
+}
+
+.masonry-item:hover img,
+.masonry-item:hover video {
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+.masonry-item video {
+    object-fit: cover;
+}
+
+/* Swiper Testimonials Custom Styles */
+.testimonial-swiper {
+    padding: 0 0 50px 0;
+    position: relative;
+}
+
+.testimonial-swiper .swiper-slide {
+    height: auto;
+}
+
+/* Navigation Arrows - Hidden */
+.testimonial-prev,
+.testimonial-next {
+    display: none !important;
+}
+
+/* Pagination Dots */
+.testimonial-pagination {
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #D1D5DB;
+    opacity: 1;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+    background: #10B981;
+    width: 24px;
+    border-radius: 5px;
+}
